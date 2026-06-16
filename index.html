@@ -47,8 +47,7 @@ body.touch-dev{cursor:auto;}
   box-shadow:0 0 14px var(--glow);transition:width .28s ease;position:relative;}
 .b-fill::after{content:'';position:absolute;right:0;top:-3px;width:4px;height:8px;
   background:#fff;box-shadow:0 0 10px #fff;border-radius:2px;}
-.b-pct{font-family:var(--mono);font-size:1.7rem;font-weight:700;color:var(--p);
-  text-align:right;text-shadow:0 0 16px var(--glow);}
+.b-pct{font-family:var(--mono);font-size:1.7rem;font-weight:700;color:var(--p);  text-align:right;text-shadow:0 0 16px var(--glow);}
 .b-brand{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
   opacity:0;pointer-events:none;transition:opacity .5s ease;z-index:2;background:#060606;}
 .b-brand.show{opacity:1;}
@@ -97,8 +96,7 @@ body.touch-dev{cursor:auto;}
 .o3{width:170px;height:170px;background:radial-gradient(circle,rgba(232,93,4,.11),transparent 70%);
   bottom:12%;left:28%;animation-duration:17s;animation-delay:-4s;}
 @keyframes orbF{0%{transform:translate(0,0) scale(1);}25%{transform:translate(28px,-38px) scale(1.1);}
-  50%{transform:translate(-18px,18px) scale(.95);}75%{transform:translate(36px,26px) scale(1.05);}
-  100%{transform:translate(0,0) scale(1);}}
+  50%{transform:translate(-18px,18px) scale(.95);}75%{transform:translate(36px,26px) scale(1.05);}  100%{transform:translate(0,0) scale(1);}}
 /* hide bg fx in gif mode */
 body.gif-mode .rays,body.gif-mode .scanlines,body.gif-mode .orb{opacity:0;}
 @keyframes rRot{to{transform:rotate(360deg);}}
@@ -110,6 +108,7 @@ body.gif-mode .rays,body.gif-mode .scanlines,body.gif-mode .orb{opacity:0;}
   transition:var(--tr);cursor:pointer;background:transparent;aspect-ratio:1/1;}
 #corner img{width:100%;height:100%;object-fit:cover;display:block;border-radius:18px;}
 #corner:hover{transform:scale(1.12) rotate(-3deg);box-shadow:0 10px 40px rgba(0,0,0,.7),0 0 40px rgba(232,93,4,.55);border-color:var(--s);}
+#corner.active{border-color:var(--s);box-shadow:0 10px 40px rgba(0,0,0,.7),0 0 40px rgba(232,93,4,.55);}
 @media(max-width:480px){#corner{width:72px;bottom:.7rem;right:.7rem;border-width:2px;border-radius:14px;}}
 
 /* ═══ FLOATING PARTICLES ═══ */
@@ -146,8 +145,7 @@ body.gif-mode .rays,body.gif-mode .scanlines,body.gif-mode .orb{opacity:0;}
   text-decoration:none;display:flex;align-items:center;gap:.4rem;}
 .nav-brand::before{content:'';width:6px;height:6px;background:var(--p);border-radius:50%;
   box-shadow:0 0 8px var(--p);animation:pu 2s infinite;}
-.nav-st{display:flex;align-items:center;gap:.32rem;font-size:.62rem;
-  color:#4ade80;font-weight:600;letter-spacing:.12em;text-transform:uppercase;}
+.nav-st{display:flex;align-items:center;gap:.32rem;font-size:.62rem;  color:#4ade80;font-weight:600;letter-spacing:.12em;text-transform:uppercase;}
 .nav-st::before{content:'';width:5px;height:5px;background:#4ade80;border-radius:50%;
   box-shadow:0 0 6px #4ade80;animation:pu 2s infinite;}
 .nav-clk{font-family:var(--mono);font-size:.75rem;color:var(--dim);min-width:68px;text-align:right;}
@@ -196,8 +194,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
   background:linear-gradient(135deg,var(--p),var(--s));align-items:center;justify-content:center;
   font-size:2.6rem;font-weight:900;color:#fff;}
 .h-name{font-size:2.8rem;font-weight:900;letter-spacing:.24em;margin-bottom:.4rem;
-  background:linear-gradient(135deg,#fff 0%,var(--p) 48%,var(--s) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+  background:linear-gradient(135deg,#fff 0%,var(--p) 48%,var(--s) 100%);  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .h-name::after{content:'|';-webkit-text-fill-color:var(--p);animation:blink .78s step-end infinite;margin-left:2px;font-weight:300;}
 .h-tags{display:flex;gap:.55rem;justify-content:center;flex-wrap:wrap;margin-bottom:.75rem;}
 .h-tag{font-size:.7rem;color:var(--dim);background:var(--glass);border:1px solid var(--gb);
@@ -246,8 +243,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
 .g-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.22);border:none;
   cursor:pointer;transition:var(--tr);padding:0;}
 .g-dot.on{background:var(--p);box-shadow:0 0 8px var(--p);width:20px;border-radius:4px;}
-.g-ph{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;
-  justify-content:center;color:var(--muted);gap:.7rem;}
+.g-ph{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;  justify-content:center;color:var(--muted);gap:.7rem;}
 .g-ph svg{width:46px;height:46px;opacity:.22;}
 
 /* ═══ ABOUT ═══ */
@@ -296,8 +292,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
 .ach:hover::after{left:145%;}
 .ach-ico{width:46px;height:46px;margin:0 auto .72rem;background:linear-gradient(135deg,var(--p),var(--s));
   border-radius:50%;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 0 18px rgba(232,93,4,.3);animation:achF 3s ease-in-out infinite;}
-.ach-ico svg{width:20px;height:20px;color:#fff;}
+  box-shadow:0 0 18px rgba(232,93,4,.3);animation:achF 3s ease-in-out infinite;}.ach-ico svg{width:20px;height:20px;color:#fff;}
 @keyframes achF{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
 .ach-name{font-size:.86rem;font-weight:700;margin-bottom:.18rem;}
 .ach-r{font-size:.63rem;text-transform:uppercase;letter-spacing:.12em;font-weight:600;}
@@ -346,7 +341,6 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
   position:relative;z-index:2;font-weight:300;}
 .fhrt{color:var(--p);display:inline-block;animation:hb 1.2s ease-in-out infinite;}
 @keyframes hb{0%,100%{transform:scale(1);}15%{transform:scale(1.38);}30%{transform:scale(1);}45%{transform:scale(1.2);}}
-
 /* ═══ REVEAL ═══ */
 .rev{opacity:0;transform:translateY(22px);transition:opacity .68s ease,transform .68s ease;}
 .rev.v{opacity:1;transform:none;}
@@ -396,8 +390,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
 }
 </style>
-</head>
-<body>
+</head><body>
 
 <!-- ═══ BOOT ═══ -->
 <div id="boot">
@@ -423,7 +416,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
 <div class="orb o3" aria-hidden="true"></div>
 
 <!-- ═══ CORNER WIDGET — cute gif ═══ -->
-<div id="corner" title="✦ YONOOB ✦">
+<div id="corner" title="✦ Tap to toggle BG GIF ✦">
   <!-- Pixel Cat DJ GIF -->
   <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif"
        alt="corner gif"
@@ -446,8 +439,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
   <a href="#hero" class="nav-brand">YONOOB</a>
   <div class="nav-st"><span>ONLINE</span></div>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About</a></li>    <li><a href="#gallery">Gallery</a></li>
     <li><a href="#social">Social</a></li>
     <li><a href="#skills">Skills</a></li>
   </ul>
@@ -496,8 +488,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
 <!-- ═══ GALLERY ═══ -->
 <section id="gallery">
   <h2 class="stitle rev">Gallery</h2>
-  <div class="g-wrap revS">
-    <div class="g-box" id="gbox">
+  <div class="g-wrap revS">    <div class="g-box" id="gbox">
       <div class="g-slide on" data-title="Slide 1"><img src="slide1.jpg" alt="1" onerror="this.closest('.g-slide').dataset.bad='1'"></div>
       <div class="g-slide" data-title="Slide 2"><img src="slide2.jpg" alt="2" onerror="this.closest('.g-slide').dataset.bad='1'"></div>
       <div class="g-slide" data-title="Slide 3"><img src="slide3.jpg" alt="3" onerror="this.closest('.g-slide').dataset.bad='1'"></div>
@@ -546,8 +537,7 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
   <div class="ach-grid">
     <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></div><div class="ach-name">Sleep Master</div><div class="ach-r leg">Legendary</div></div>
     <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div><div class="ach-name">AI Explorer</div><div class="ach-r epc">Epic</div></div>
-    <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 8l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z"/></svg></div><div class="ach-name">Minecraft</div><div class="ach-r rar">Rare</div></div>
-    <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="ach-name">Roblox</div><div class="ach-r rar">Rare</div></div>
+    <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 8l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z"/></svg></div><div class="ach-name">Minecraft</div><div class="ach-r rar">Rare</div></div>    <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="ach-name">Roblox</div><div class="ach-r rar">Rare</div></div>
     <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="ach-name">Creator</div><div class="ach-r epc">Epic</div></div>
     <div class="ach revS"><div class="ach-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></div><div class="ach-name">Early Adopter</div><div class="ach-r leg">Legendary</div></div>
   </div>
@@ -595,9 +585,8 @@ section{position:relative;padding:5rem 1.5rem;max-width:1100px;margin:0 auto;}
 
 <footer id="foot">
   <p>Made by <strong>YONOOB</strong> <span class="fhrt">♥</span> <span id="fyr">2026</span></p>
-  <p style="margin-top:.35rem;font-size:.66rem;opacity:.38;">G = toggle GIF &nbsp;|&nbsp; Type YONOOB = secret</p>
+  <p style="margin-top:.35rem;font-size:.66rem;opacity:.38;">Tap corner GIF = toggle BG  |  Type YONOOB = secret</p>
 </footer>
-
 <script>
 /* ══════════════════════════════════════
    SFX — Web Audio API, no files needed
@@ -646,11 +635,8 @@ const BOOT=(()=>{
       await dl(110);
     }
     await dl(230);SFX.success();br.classList.add('show');
-    await dl(1850);el.classList.add('done');SFX.startup();
-    setTimeout(()=>{
+    await dl(1850);el.classList.add('done');SFX.startup();    setTimeout(()=>{
       el.style.display='none';
-      const g=document.getElementById('bggif');
-      if(g&&g.style.display!=='none'){g.classList.add('on');document.body.classList.add('gif-mode');document.getElementById('bgg').classList.add('off');}
       revVisible();
     },1150);
   }};
@@ -674,14 +660,42 @@ const BG=(()=>{
 })();
 
 /* ══════════════════════════════════════
-   CORNER GIF — interactive
+   CORNER GIF — now toggles bg.gif on tap/click
 ══════════════════════════════════════ */
-const CornerGif=(()=>({init(){
-  const el=document.getElementById('corner');
-  el.addEventListener('mouseenter',()=>SFX.pop());
-  el.addEventListener('click',()=>{SFX.powerup();Toast.show('(=^･ω･^=) Nyan~','🐱');spawnParticles(6);});
-  el.addEventListener('touchend',e=>{e.preventDefault();SFX.pop();Toast.show('(=^･ω･^=) Nyan~','🐱');spawnParticles(6);},{passive:false});
-}}))();
+const CornerGif=(()=>{
+  const toggleBgGif=()=>{
+    const gif=document.getElementById('bggif');
+    const bgg=document.getElementById('bgg');
+    const corner=document.getElementById('corner');
+    if(!gif||gif.style.display==='none') return;
+    const isOn=gif.classList.toggle('on');
+    bgg.classList.toggle('off',isOn);
+    document.body.classList.toggle('gif-mode',isOn);
+    corner.classList.toggle('active',isOn);
+    SFX.toggle();
+    Toast.show(isOn?'BG GIF ON ✨':'BG GIF OFF','🎞️');
+    Particles.burst(
+      corner.getBoundingClientRect().left+corner.offsetWidth/2,
+      corner.getBoundingClientRect().top+corner.offsetHeight/2,
+      8
+    );
+  };
+  return{init(){
+    const el=document.getElementById('corner');
+    el.addEventListener('mouseenter',()=>SFX.pop());
+    // Unified handler works for both mouse click and touch
+    el.addEventListener('click',(e)=>{      e.preventDefault();
+      SFX.init();
+      toggleBgGif();
+    });
+    // Extra touch handler for mobile to ensure it fires reliably
+    el.addEventListener('touchend',(e)=>{
+      e.preventDefault();
+      SFX.init();
+      toggleBgGif();
+    },{passive:false});
+  }};
+})();
 
 /* ══════════════════════════════════════
    FLOATING PARTICLES
@@ -719,8 +733,7 @@ const Gallery=(()=>{
   const tEl=document.getElementById('gtit'),cEl=document.getElementById('gcur'),toEl=document.getElementById('gtot');
   const dotsEl=document.getElementById('gdots'),ph=document.getElementById('gph');
   let cur=0,timer=null,tx=0;
-  return{init(){
-    setTimeout(()=>{
+  return{init(){    setTimeout(()=>{
       const valid=slides.filter(s=>!s.dataset.bad);
       const tot=valid.length;
       if(!tot){ph.style.display='flex';toEl.textContent='0';return;}
@@ -769,8 +782,7 @@ const Cursor=(()=>{
   }};
 })();
 
-/* ══════════════════════════════════════
-   SCROLL REVEAL
+/* ══════════════════════════════════════   SCROLL REVEAL
 ══════════════════════════════════════ */
 const revVisible=()=>{document.querySelectorAll('.rev,.revS,.revL,.revR').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0)el.classList.add('v');});};
 const RevObs=(()=>{
@@ -811,7 +823,7 @@ const Ripple=(()=>({init(){
 }}))();
 
 /* ══════════════════════════════════════
-   GIF TOGGLE + TILT on about card
+   TILT on about card
 ══════════════════════════════════════ */
 const Tilt=(()=>({init(){
   if(window.matchMedia('(pointer:coarse)').matches)return;
@@ -820,7 +832,6 @@ const Tilt=(()=>({init(){
     card.addEventListener('mouseleave',()=>card.style.transform='');
   });
 }}))();
-
 /* ══════════════════════════════════════
    ACHIEVEMENTS interactive
 ══════════════════════════════════════ */
@@ -831,7 +842,7 @@ const Ach=(()=>({init(){
 }}))();
 
 /* ══════════════════════════════════════
-   SECRETS & GIF TOGGLE
+   SECRETS & GIF TOGGLE (G key still works on desktop)
 ══════════════════════════════════════ */
 const Secrets=(()=>{
   let typed='';
@@ -842,8 +853,9 @@ const Secrets=(()=>{
       typed+=e.key.toUpperCase();if(typed.length>6)typed=typed.slice(-6);
       if(typed==='YONOOB'){SFX.powerup();ag.classList.add('show');Toast.show('Secret unlocked! 🔓','⚡');setTimeout(()=>ag.classList.remove('show'),2200);typed='';}
       if(e.key==='g'||e.key==='G'){
-        const gif=document.getElementById('bggif'),bgg=document.getElementById('bgg');
-        const on=gif.classList.toggle('on');bgg.classList.toggle('off',on);document.body.classList.toggle('gif-mode',on);
+        const gif=document.getElementById('bggif'),bgg=document.getElementById('bgg'),corner=document.getElementById('corner');
+        if(!gif||gif.style.display==='none') return;
+        const on=gif.classList.toggle('on');bgg.classList.toggle('off',on);document.body.classList.toggle('gif-mode',on);corner.classList.toggle('active',on);
         SFX.toggle();Toast.show(on?'GIF background ON':'GIF background OFF','🎞️');
       }
       if(e.key==='Escape')ag.classList.remove('show');
@@ -868,9 +880,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   Parallax.init();
   Ripple.init();
   Tilt.init();
-  Ach.init();
-  Secrets.init();
-  // FIXED: Was CornerCat.init(), now CornerGif.init()
+  Ach.init();  Secrets.init();
   CornerGif.init();
   document.getElementById('fyr').textContent=new Date().getFullYear();
   BOOT.start();
@@ -878,4 +888,3 @@ document.addEventListener('DOMContentLoaded',()=>{
 </script>
 </body>
 </html>
-
